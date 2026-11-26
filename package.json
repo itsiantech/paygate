@@ -1,0 +1,31 @@
+{
+  "name": "paygate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-tenant SMS payment verification gateway for bKash and Nagad with hosted checkout and signed webhooks",
+  "main": "paygate.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node paygate.js",
+    "dev": "node --watch paygate.js",
+    "check": "node --check paygate.js",
+    "test": "node test/smoke.js"
+  },
+  "keywords": [
+    "bkash",
+    "nagad",
+    "payments",
+    "sms",
+    "webhook",
+    "sqlite",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "express": "^5.3.0"
+  }
+}
